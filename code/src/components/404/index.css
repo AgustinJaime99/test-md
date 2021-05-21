@@ -1,0 +1,17 @@
+.title-error{
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+.sub-title-error{
+    color: inherit;
+    text-decoration: none;
+    color: rgba(76, 199, 221, 0.74);
+    transition: 00.5s;
+
+}
+
+.sub-title-error:hover{
+    transition: 0.5s;
+    color: rgb(8, 179, 247);
+}

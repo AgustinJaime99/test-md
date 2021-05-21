@@ -1,0 +1,96 @@
+.table {
+    margin-top: 10%;
+    margin-right: 5%;
+    margin-left: 5%;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    border: 1px solid #000000;
+    background-color: #F1F1F1;
+    width: 90%;
+    height: 100%;
+    text-align: left;
+    border-collapse: collapse;
+    box-shadow: 1px 1px 20px 0px rgba(0, 0, 0, 0.349)
+  }
+  .divTable.table .divTableCell, .divTable.table .divTableHead {     
+    border: 1px solid #A3A3A3;
+    padding: 4px 4px;
+  }
+  .divTable.table .divTableBody .divTableCell {
+    font-size: 12px;
+    color: #000000;
+  }
+  .divTable.table .divTableRow:nth-child(even) {
+    background: #FFFFFF;
+  }
+  .divTable.table .divTableHeading {
+    background: #FFFFFF;
+    border-bottom: 1px solid #101010;
+  }
+  .divTable.table .divTableHeading .divTableHead {
+    font-size: 16px;
+    font-weight: normal;
+    color: #000000;
+    text-align: left;
+    border-left: 1px solid #4A4A4A;
+  }
+  .divTable.table .divTableHeading .divTableHead:first-child {
+    border-left: none;
+  }
+  
+  .table .tableFootStyle {
+    font-size: 12px;
+  }
+  /* DivTable.com */
+  .divTable{ display: table; }
+  .divTableRow { display: table-row; }
+  .divTableHeading { display: table-header-group;}
+  .divTableCell, .divTableHead { display: table-cell;}
+  .divTableHeading { display: table-header-group;}
+  .divTableFoot { display: table-footer-group;}
+  .divTableBody { display: table-row-group;}
+
+  @media only screen and (max-width: 600px) {
+    div.table {
+        margin-top: 20%;
+        margin-right: 0%;
+        margin-left: 0%;
+        width: 100%;
+    }
+    .divTable.table .divTableHeading .divTableHead{
+      font-size: 11px;
+    }
+  }
+
+  .navigate{
+      margin-top: 5%;
+      display: flex;
+      justify-content: space-evenly;
+  }
+
+  .formContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding: 5%;
+  }
+
+  .labelSearch{
+    margin:2%;
+    border: none;
+    appearance: none;
+    background: #f2f2f2;
+    padding: 12px;
+    border-radius: 5px;
+    width: 250px;
+    outline: none;
+  }
+
+  .labelSearch:focus::placeholder{
+    color: transparent;
+  }
+  .labelSearch::placeholder{
+    color: #222;
+    transition: color 0.5s ease;
+  }

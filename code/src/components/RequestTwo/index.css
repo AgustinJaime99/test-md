@@ -1,0 +1,54 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin-top: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.192);
+    align-items: center;
+    border-radius: 10px;
+}
+
+.title{
+    margin: 7%;
+}
+
+.text{
+    margin: 7%;
+}
+
+.music{
+    margin: 2%;
+    height:250px;
+    width:480px;
+    filter:brightness(0.2);
+    transition: 00.7s;
+}
+
+.music:hover{
+    transition: 0.7s;
+    filter: none;
+}
+
+@media only screen and (max-width: 600px) {
+    div.container {
+        margin-top: 0%;
+        margin-right: 0%;
+        margin-left: 0%;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .music{
+        margin:0%;
+        width: 100%;
+        height: 100%;
+    }
+
+  }
+
+  .video{
+      width: 100%;
+      height: 100%;
+  }
