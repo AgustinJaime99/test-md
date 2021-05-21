@@ -19,7 +19,7 @@ function RequestThree() {
       Swal.fire("Success!", "", "success");
     }
     if (data.length > 0) {
-      let map = data.map((i) => i.name === search);
+      let map = data.map((i) => i.name.toLowerCase() === search.toLowerCase());
       if (map.includes(true)) {
         Swal.fire("Error!", "The city is already in table", "error");
       } else {
